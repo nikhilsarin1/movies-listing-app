@@ -1,0 +1,89 @@
+.multi-select-filter {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 226px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 48px;
+    align-items: stretch;
+}
+
+.dropdown-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    height: 100%;
+}
+
+.rating-filter .dropdown-content {
+    width: 362px;
+}
+
+.genre-filter .dropdown-content {
+    width: 172px;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 362px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 2;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden; 
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow.down {
+    transform: rotate(45deg);
+}
+
+.arrow.up {
+    transform: rotate(-135deg);
+}
+
+.multi-select-filter label {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-top: 1px solid #eee; 
+}
+
+.multi-select-filter input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+.multi-select-filter .star {
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+}
+
+.multi-select-filter .filled {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 2px; 
+}
+
+.multi-select-filter .empty {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 2px; 
+}

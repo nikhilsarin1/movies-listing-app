@@ -1,0 +1,82 @@
+.search-bar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    min-width: 441px;
+    height: 48px;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.suggestions-list {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin-top: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center; 
+    padding: 8px;
+    width: 100%;
+}
+
+.movie-details {
+    flex-grow: 1;
+}
+
+.movie-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+}
+
+.title-and-genre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.movie-title {
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    flex-grow: 1; 
+}
+
+.movie-genre {
+    font-size: 14px;
+    color: #808080;
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-right: 20px;
+}
